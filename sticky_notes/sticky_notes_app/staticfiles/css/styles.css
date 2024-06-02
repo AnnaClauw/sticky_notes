@@ -1,0 +1,159 @@
+/* styles.css */
+
+/* Font */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* General Styles */
+body {
+    background-color: #f6f6f6; /* Light gray background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #1a1a1a; /* Dark gray heading */
+}
+
+a {
+    color: #e68a00; /* Orange for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #ffd700; /* Gold color */
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: #1a1a1a; /* Dark gray text */
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ffcc00; /* Lighter gold for hover */
+}
+
+/* Content Area */
+.content {
+    margin: 2em;
+    padding: 2em;
+    background-color: #fff; /* White background for content */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Forms */
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    background-color: #fff; /* White background for forms */
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* List Items */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #fff; /* White background for list items */
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+ul li strong {
+    color: #e68a00; /* Orange for note titles */
+}
+
+ul li a {
+    margin-left: 1em;
+    color: #e68a00; /* Orange for links */
+}
+
+ul li a:hover {
+    color: #ff7f00; /* Darker orange for hover */
+}
+
+/* Buttons */
+button {
+    background-color: #e68a00; /* Orange */
+    color: #fff; /* White text */
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff7f00; /* Darker orange for hover */
+}
+
+/* Miscellaneous */
+.note-confirm-delete {
+    max-width: 500px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.note-confirm-delete p {
+    margin-bottom: 1.5em;
+    color: #666;
+}
+
+.logout-button {
+    background-color: #f44336; /* Red background */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+}
+
+.logout-button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #f44336;
+}
+
+/* Logo */
+.logo {
+
+    width: 100px; /* Set the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+

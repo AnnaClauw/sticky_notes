@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% if form.instance.pk %}Edit{% else %}Create{% endif %} Sticky Note</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+</head>
+<body>
+    <h1>{% if form.instance.pk %}Edit{% else %}Create{% endif %} Sticky Note</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+<!-- Logout Button -->
+<form id="logout-form" action="{% url 'logout' %}" method="POST" style="display: inline;">
+    {% csrf_token %}
+    <button type="submit" class="logout-button">Logout</button>
+</form>
+
+
+
+</body>
+
+</html>

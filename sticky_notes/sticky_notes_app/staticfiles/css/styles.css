@@ -149,11 +149,3 @@ button:hover {
     color: black;
     border: 2px solid #f44336;
 }
-
-/* Logo */
-.logo {
-
-    width: 100px; /* Set the width of the logo */
-    height: auto; /* Maintain aspect ratio */
-}
-

@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <style>
+        /* Add your custom styles here */
+        .logo {
+            width: 150px;  /* Set the desired width */
+            height: auto;  /* Maintain aspect ratio */
+        }
         /* Styles for the modal */
         .modal {
             display: none; /* Hidden by default */
@@ -52,14 +57,14 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <img src="{% static 'css/logo.pgn' %}" alt="Logo" class="logo">
+                <img src="{% static 'logo.png' %}" alt="Logo" class="logo">
                 <h1 class="logo-title">
                     Anna's note app
                 </h1>
             </div>
             <div class="col text-right">
                 <!-- Logout Button -->
-                <form id="logout-form" action="{% url 'logout' %}" method="POST" style="display: inline;">
+                <form id="logout-form" action="{% url 'custom_logout' %}" method="POST" style="display: inline;">
                     {% csrf_token %}
                     <button type="submit" class="logout-button">Logout</button>
                 </form>

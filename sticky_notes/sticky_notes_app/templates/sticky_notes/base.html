@@ -15,7 +15,8 @@
             <li><a href="{% url 'note_list' %}">Home</a></li>
             {% if user.is_authenticated %}
                 <li><a href="{% url 'note_create' %}">Create Note</a></li>
-                <li><a href="{% url 'logout' %}">Logout</a></li>
+                <li><a href="{% url 'custom_logout' %}">Logout</a>
+                </li>
             {% else %}
                 <li><a href="{% url 'login' %}">Login</a></li>
                 <li><a href="{% url 'register' %}">Register</a></li>

@@ -126,13 +126,15 @@ import os
 from pathlib import Path
 
 # Static files (CSS, JavaScript, Images)
-STATIC_URL = "/static/"
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "staticfiles")]
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # settings.py
 
-LOGIN_URL = 'login'
-LOGOUT_URL = 'logout'
+LOGIN_URL = "login"
+LOGOUT_URL = "logout"
 
-LOGIN_REDIRECT_URL = '/notes/'  # Redirect users to the notes list after login
+LOGIN_REDIRECT_URL = "/notes/"  # Redirect users to the notes list after login

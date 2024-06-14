@@ -15,7 +15,7 @@
         <button type="submit">Save</button>
     </form>
 <!-- Logout Button -->
-<form id="logout-form" action="{% url 'logout' %}" method="POST" style="display: inline;">
+<form id="logout-form" action="{% url 'custom_logout' %}" method="POST" style="display: inline;">
     {% csrf_token %}
     <button type="submit" class="logout-button">Logout</button>
 </form>
